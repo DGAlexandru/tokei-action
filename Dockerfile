@@ -1,7 +1,7 @@
 FROM alpine:3.13
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["./entrypoint.sh"]
+CMD ["tokei . | tee -a loc.txt"]
 
 RUN apk add --no-cache --update tokei \
     dumb-init \
