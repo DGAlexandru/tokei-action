@@ -8,3 +8,4 @@ RUN apk add --no-cache --update tokei \
     git
 
 COPY entrypoint.sh /
+RUN chmod +x entrypoint.sh
