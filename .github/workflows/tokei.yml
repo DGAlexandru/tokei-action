@@ -25,7 +25,7 @@ jobs:
       uses: DGAlexandru/tokei-action@master
 
     - name: Upload tokei output as a build artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: loc.txt
         path: loc.txt
