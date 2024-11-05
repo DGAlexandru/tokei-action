@@ -20,7 +20,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs DGAlexandru/cloc-action@master
+    # Runs DGAlexandru/tokei-action@master
     - name: Count Lines of Code (tokei)
       uses: DGAlexandru/tokei-action@master
 
